@@ -154,7 +154,7 @@ const Body = () => {
 
       </main>
       <div className={styles.cvContainer}>
-        <a href="/cv.pdf" className={styles.cvLink} target="_blank" download>
+        <a href="/dilip_cv_software.pdf" className={styles.cvLink} target="_blank" download>
           Download My CV
         </a>
       </div>
