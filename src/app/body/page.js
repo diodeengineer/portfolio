@@ -70,19 +70,51 @@ const Body = () => {
          </ul>
          </section>
 
-        {/* Experience Section */}
-        <section id="experience" className={styles.section}>
-          <h2 className={styles.section__heading}>Experience</h2>
-          <div className={styles.experience__job}>
-            <h3 className={styles.experience__jobTitle}>Software Developer Intern <span className={styles.experience__date}>[January 2025 - July 2025]</span></h3>
-            <p className={styles.experience__company}>Company Name</p>
-            <ul className={styles.experience__list}>
-              <li className={styles.experience__listItem}>Describe your first major responsibility or achievement here.</li>
-              <li className={styles.experience__listItem}>Describe a second key achievement, e.g., Collaborated with a team of 5 developers...</li>
-              <li className={styles.experience__listItem}>Describe a third contribution, e.g., Gained hands-on experience with...</li>
-            </ul>
-          </div>
-        </section>
+
+<div className={styles.experience__job}>
+  {/* Akrabhi Internship */}
+  <h3 className={styles.experience__jobTitle}>
+    Software Developer Intern
+    <span className={styles.experience__date}>[June 2024 - September 2024]</span>
+  </h3>
+  <p className={styles.experience__company}>Akrabhi Software Pvt Ltd</p>
+  <ul className={styles.experience__list}>
+    <li className={styles.experience__listItem}>
+      Developed a Chrome extension to store, organize, and manage user URLs in PostgreSQL using Node.js & Express.
+    </li>
+    <li className={styles.experience__listItem}>
+      Implemented REST APIs for URL CRUD operations and integrated authentication for secure access.
+    </li>
+    <li className={styles.experience__listItem}>
+      Improved extension performance and gained hands-on experience with full-stack development.
+    </li>
+  </ul>
+
+  {/* Chingu Open Source */}
+  <h3 className={styles.experience__jobTitle}>
+    Open Source Contributor
+    <span className={styles.experience__date}>[January 2024 - February 2024]</span>
+  </h3>
+  <p className={styles.experience__company}>Chingu</p>
+  <ul className={styles.experience__list}>
+    <li className={styles.experience__listItem}>
+      Contributed to <strong>TaskCraft</strong>, a task management app that helps users efficiently plan and complete tasks.
+    </li>
+    <li className={styles.experience__listItem}>
+      Built key features in React and optimized task management logic, improving user experience.
+    </li>
+    <li className={styles.experience__listItem}>
+      Project Links: 
+      <a href="https://task-craft.netlify.app/" target="_blank" rel="noopener noreferrer">
+        Live Demo
+      </a>{" | "}
+      <a href="https://github.com/chingu-voyages/v47-tier2-team-11" target="_blank" rel="noopener noreferrer">
+        <FaGithub className={styles.icon} /> GitHub
+      </a>
+    </li>
+  </ul>
+</div>
+
 
         <section id="projects" className={styles.section}>
           <h2 className={styles.section__heading}>Projects</h2>
