@@ -1,0 +1,45 @@
+/* Header.module.css */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: #0a0a08;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header__title {
+  color: #928d8d;
+  margin: 0;
+  font-size: 1.5rem; /* This replaces the text-2xl utility class */
+  font-weight: bold; /* This replaces the font-bold utility class */
+}
+
+.header__nav {
+  /* No specific styles needed here, as flexbox is on the ul */
+}
+
+.header__navList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* This replaces the flex utility class */
+  gap: 1rem; /* A modern way to add space between items, replaces space-x-4 */
+}
+
+.header__navItem {
+  /* No specific styles needed on the list item itself if using gap */
+}
+
+.header__navLink {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.header__navLink:hover {
+  color: #007bff;
+  text-decoration: underline;
+}

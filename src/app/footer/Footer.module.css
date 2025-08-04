@@ -1,0 +1,75 @@
+
+
+/* Footer.module.css */
+
+.footer {
+  background-color: #333;
+  color: #faf9f9;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-top: 1px solid #444;
+}
+
+.footer__copyright {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer__link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer__link:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+
+
+
+.footer__iconLink {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem; /* Adjust icon size */
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  width: 2rem;
+}
+
+.footer__iconLink:hover {
+  color: #007bff;
+}
+
+.visuallyHidden {
+  /* This class hides the text visually but keeps it accessible for screen readers */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* For mobile screens*/
+@media (max-width: 600px) {
+  .footer__links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

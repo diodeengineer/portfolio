@@ -1,0 +1,186 @@
+
+/* Body.module.css */
+
+/* Body.module.css */
+
+.main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+
+.section {
+  padding: 2rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.section:last-of-type {
+  border-bottom: none;
+}
+
+/* About Section */
+.section__heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.section__subheading {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #7f8c8d;
+  margin-bottom: 1rem;
+}
+
+.section__paragraph {
+  margin-top: 1rem;
+  color: #555;
+}
+
+/* Skills Section */
+.skills__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  list-style: none;
+  margin-top: 1rem;
+  padding: 0;
+}
+
+.skills__listItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skills__listItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill__icon {
+  font-size: 3rem;
+  color: #34495e;
+}
+
+.skill__name {
+  font-weight: 600;
+  color: #34495e;
+  text-align: center;
+}
+
+/* Projects and Contact Sections (General styles) */
+.section__list {
+  margin-top: 1rem;
+  list-style: disc;
+  padding-left: 2rem;
+  color: #555;
+}
+
+.section__listItem {
+  margin-bottom: 0.5rem;
+}
+
+.section__link {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.section__link:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+/* CV Download Link */
+.cvContainer {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.cvLink {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background-color: #2ecc71;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cvLink:hover {
+  background-color: #27ae60;
+  transform: translateY(-2px);
+}
+
+
+/* Contact Form Styles */
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+  max-width: 600px; /* Optional: keeps the form from being too wide */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #34495e;
+}
+
+.form__input,
+.form__textarea {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.form__input:focus,
+.form__textarea:focus {
+  outline: none;
+  border-color: #3498db; /* Highlight on focus */
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+.form__textarea {
+  resize: vertical; /* Allows the user to resize the textarea */
+}
+
+.form__button {
+  padding: 0.75rem 2rem;
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.form__button:hover {
+  background-color: #27ae60;
+  transform: translateY(-2px);
+}
