@@ -107,12 +107,13 @@ const Body = () => {
         <span className={styles.tech__tag}>Jun 2024 – Sep 2024</span>
       </div>
 
-      <p className={styles.project__description}>
+
         <ul className={styles.project__description}>
   <li>Developed a full-stack productivity tool for bookmark management</li>
   <li>Designed RESTful APIs and handled backend logic</li>
   <li>Worked with databases for data storage and retrieval</li>
-</ul>     </p>
+</ul>     
+
 
       <div className={styles.project__tech}>
         <span className={styles.tech__tag}>React</span>
@@ -122,29 +123,27 @@ const Body = () => {
     </div>
 
     {/* Freelancing */}
-    <div className={styles.project__card}>
-      <div className={styles.project__header}>
-        <h3 className={styles.project__title}>
-          Freelance Developer
-        </h3>
-        <span className={styles.tech__tag}>Oct 2025 – Present</span>
-      </div>
+<div className={styles.project__card}>
+  <div className={styles.project__header}>
+    <h3 className={styles.project__title}>
+      Freelance Developer
+    </h3>
+    <span className={styles.tech__tag}>Oct 2025 – Present</span>
+  </div>
 
-      <p className={styles.project__description}>
-        <li>
- Designed IoT controllers using ESP32 with multiple relay outputs  
-    
-        </li>
-           
-           <li> 
-       Built Raspberry Pi HAT PCB for automation systems  
-        
-            </li> 
-            <li>
- Worked on PCB fabrication and hardware integration  
- 
-            </li>
-                </p>
+  <ul className={styles.project__description}>
+    <li>Designed IoT controllers using ESP32 with multiple relay outputs</li>
+    <li>Built Raspberry Pi HAT PCB for automation systems</li>
+    <li>Worked on PCB fabrication and hardware integration</li>
+  </ul>
+
+  <div className={styles.project__tech}>
+    <span className={styles.tech__tag}>ESP32</span>
+    <span className={styles.tech__tag}>Raspberry Pi</span>
+    <span className={styles.tech__tag}>KiCad</span>
+  </div>
+</div>
+
 
       <div className={styles.project__tech}>
         <span className={styles.tech__tag}>ESP32</span>
@@ -153,32 +152,26 @@ const Body = () => {
       </div>
     </div>
 
-    {/* Open Source */}
-    <div className={styles.project__card}>
-      <div className={styles.project__header}>
-        <h3 className={styles.project__title}>
-          Open Source Contributor – Chingu
-        </h3>
-        <span className={styles.tech__tag}>Jan 2024 – Feb 2024</span>
-      </div>
-
-      <p className={styles.project__description}>
-        <li>
-Contributed to a task management application  
-
-        </li>
-               <li> Collaborated with global developers using Git  
-   
-                </li>   
-                   </p>
-
-      <div className={styles.project__tech}>
-        <span className={styles.tech__tag}>React</span>
-        <span className={styles.tech__tag}>Git</span>
-      </div>
-    </div>
-
+  {/* Open Source */}
+<div className={styles.project__card}>
+  <div className={styles.project__header}>
+    <h3 className={styles.project__title}>
+      Open Source Contributor – Chingu
+    </h3>
+    <span className={styles.tech__tag}>Jan 2024 – Feb 2024</span>
   </div>
+
+  <ul className={styles.project__description}>
+    <li>Contributed to a task management application</li>
+    <li>Collaborated with global developers using Git</li>
+  </ul>
+
+  <div className={styles.project__tech}>
+    <span className={styles.tech__tag}>React</span>
+    <span className={styles.tech__tag}>Git</span>
+  </div>
+</div>
+ 
 </section>
 
         {/* Projects Section */}
@@ -323,7 +316,7 @@ Contributed to a task management application
       </p>
 
       <a
-        href="/resume.pdf"
+        href="/dilip_resume.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className={styles.form__button}
